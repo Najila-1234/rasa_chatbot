@@ -1,0 +1,82 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - greetings
+  - location
+  - welcome
+  - courses_offered
+  - placement
+  - duration
+  - branches
+  - address
+  - course_fees
+  - enquiry
+  - founder
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_location:
+  - text: "kakkanad"
+
+  utter_welcome_luminar:
+  - text: "Hello,Welcome to Luminar technolab ,How can i help you?"
+
+  utter_courses_offered:
+  - text: " We provide Big Data Training, Data Science, Python,Mean Stack,Software Testing & many more"
+
+  utter_placement:
+  - text: "Get 100% assured placement assistance after your training period"
+
+  utter_duration:
+  - text: "4 Months to 6 months, 2 Hours/day depends on each course"
+
+  utter_branches:
+  - text: "cochin and calicut"
+
+  utter_address:
+  - text: "Luminar Technolab Pvt Ltd
+           Ground Floor,K7 REALTY,
+           Juma masjid road,
+           Seaport - Airport Rd, near Opp: District Panchayat,
+           Kakkanad, Kochi, Kerala - 682030"
+
+  utter_course_fees:
+  - text: "For course fees visit our website, our site is contact@luminartechnolab.com"
+
+  utter_enquiry:
+  - text: "Enquiry: contact@luminartechnolab.com
+           Placement Cell: hr@luminartechnolab.com"
+
+
+  utter_founder:
+  - text: "Rahul M kumar"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

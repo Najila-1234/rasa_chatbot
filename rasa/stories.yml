@@ -1,0 +1,83 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: luminar
+  steps:
+  - intent: location
+  - action: utter_location
+
+- story: welcome
+  steps:
+  - intent: welcome
+  - action: utter_welcome_luminar
+
+- story: courses_offered
+  steps:
+  - intent: courses_offered
+  - action: utter_courses_offered
+
+- story: placement
+  steps:
+  - intent: placement
+  - action: utter_placement    
+
+- story: duration
+  steps:
+  - intent: duration
+  - action: utter_duration
+
+- story: branches
+  steps:
+  - intent: branches
+  - action: utter_branches
+
+- story: address
+  steps:
+  - intent: address
+  - action: utter_address 
+
+- story: course_fees
+  steps:
+  - intent: course_fees
+  - action: utter_course_fees
+
+- story: enquiry
+  steps:
+  - intent: enquiry
+  - action: utter_enquiry
+
+- story: founder
+  steps:
+  - intent: founder
+  - action: utter_founder
+        
+
+     
